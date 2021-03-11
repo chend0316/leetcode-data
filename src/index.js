@@ -8,7 +8,7 @@ const promises = [];
 
 problems.forEach((problem) => {
   const id = problem.questionId;
-  if (id <= 100 && problem.isPaidOnly === false) {
+  if (id <= 100 && problem.isPaidOnly === false && problem.categoryTitle === 'Algorithms' && id < 1000000) {
     promises.push(Promise.resolve(
       fetchMetadata(problem.titleSlug).then((data) => {
         try {

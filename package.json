@@ -4,10 +4,11 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "build": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "chend0316",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.21.0"
