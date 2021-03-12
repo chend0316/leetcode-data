@@ -403,7 +403,8 @@
       "paramindex": 0,
       "size": "ret"
     },
-    "exampleTestcases": "[1,1,2]\n[0,0,1,1,1,2,2,3,3,4]"
+    "exampleTestcases": "[1,1,2]\n[0,0,1,1,1,2,2,3,3,4]",
+    "exampleResult": "[1,2]\n[0,1,2,3,4]"
   },
   "27": {
     "name": "removeElement",
@@ -424,7 +425,8 @@
       "paramindex": 0,
       "size": "ret"
     },
-    "exampleTestcases": "[3,2,2,3]\n3\n[0,1,2,2,3,0,4,2]\n2"
+    "exampleTestcases": "[3,2,2,3]\n3\n[0,1,2,2,3,0,4,2]\n2",
+    "exampleResult": "[2,2]\n[0,1,3,0,4]"
   },
   "28": {
     "name": "strStr",
