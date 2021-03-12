@@ -6,17 +6,6 @@ import pathlib
 import os
 
 class Metadata:
-    converter = {
-        'integer': {
-            'parse': lambda s : int(s),
-            'stringify': lambda v : str(v)
-        },
-        'integer[]': {
-            'parse': lambda s : [int(e) for e in s[1:-1].split(',')],
-            'stringify': lambda v: '[' + ','.join([str(e) for e in v]) + ']'
-        }
-    }
-
     def __init__(self, filename):
         super().__init__()
         self.filename = filename
@@ -29,15 +18,39 @@ class Metadata:
         for i, paramString in enumerate(testcases.split('\n')):
             if i % len(paramTypes) == 0: params.append([])
             paramType = paramTypes[i % len(paramTypes)]
-            params[-1].append(self.converter[paramType]['parse'](paramString))
+            params[-1].append(self.__parse(paramType, paramString))
         return params
     
     def setExampleResult(self, problemId: str, result):
         resultType = self.metadata[problemId]['return']['type']
-        self.metadata[problemId]['exampleResult'] = '\n'.join([self.converter[resultType]['stringify'](r) for r in result])
+        self.metadata[problemId]['exampleResult'] = '\n'.join([self.__stringify(resultType, r) for r in result])
     
     def save(self):
         json.dump(self.metadata, open(self.filename, 'w'), indent=2)
+
+    def __parse(self, type: str, s):
+        if type == 'integer':
+            return int(s)
+        elif type == 'integer[]':
+            if s == '[]': return []
+            return [int(e) for e in s[1:-1].split(',')]
+        elif type == 'string':
+            return s[1:-1]
+        elif re.match(r'list<(.+)>', type):
+            innerType = re.match(r'list<(.+)>', type)[1]
+            return [self.__parse(innerType, e) for e in s[1:-1].split(',')]
+
+    def __stringify(self, type: str, v):
+        if type == 'integer':
+            return str(v)
+        elif type == 'integer[]':
+            return '[' + ','.join([str(e) for e in v]) + ']'
+        elif type == 'string':
+            return '"' + v + '"'
+        elif re.match(r'list<(.+)>', type):
+            innerType = re.match(r'list<(.+)>', type)[1]
+            return '[' + ','.join([self.__stringify(innerType, e) for e in v]) + ']'
+
 
 if __name__ == '__main__':
     pathOfCurrentFile = pathlib.Path(__file__).parent.absolute()

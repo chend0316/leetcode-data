@@ -222,7 +222,8 @@
       "colsize": 3,
       "dealloc": true
     },
-    "exampleTestcases": "[-1,0,1,2,-1,-4]\n[]\n[0]"
+    "exampleTestcases": "[-1,0,1,2,-1,-4]\n[]\n[0]",
+    "exampleResult": "[[-1,-1,2],[-1,0,1]]\n[]\n[]"
   },
   "16": {
     "name": "threeSumClosest",
