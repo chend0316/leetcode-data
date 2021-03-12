@@ -5,6 +5,8 @@ import json
 import pathlib
 import os
 
+from solutions.leetcode import ListNode
+
 class Metadata:
     def __init__(self, filename):
         super().__init__()
@@ -36,9 +38,19 @@ class Metadata:
             return [int(e) for e in s[1:-1].split(',')]
         elif type == 'string':
             return s[1:-1]
+        elif type == 'boolean':
+            return s == 'true'
         elif re.match(r'list<(.+)>', type):
             innerType = re.match(r'list<(.+)>', type)[1]
             return [self.__parse(innerType, e) for e in s[1:-1].split(',')]
+        elif type == 'ListNode':
+            if s == '[]': return None
+            p = dummy = ListNode()
+            for v in s[1:-1].split(','):
+                p.next = ListNode(int(v))
+                p = p.next
+            return dummy.next
+        raise Exception(type + "不支持")
 
     def __stringify(self, type: str, v):
         if type == 'integer':
@@ -47,10 +59,19 @@ class Metadata:
             return '[' + ','.join([str(e) for e in v]) + ']'
         elif type == 'string':
             return '"' + v + '"'
+        elif type == 'boolean':
+            return 'true' if v else 'false'
         elif re.match(r'list<(.+)>', type):
             innerType = re.match(r'list<(.+)>', type)[1]
             return '[' + ','.join([self.__stringify(innerType, e) for e in v]) + ']'
-
+        elif type == 'ListNode':
+            res = []
+            p = v
+            while p:
+                res.append(str(p.val))
+                p = p.next
+            return '[' + ','.join(res) + ']'
+        raise Exception(type + "不支持")
 
 if __name__ == '__main__':
     pathOfCurrentFile = pathlib.Path(__file__).parent.absolute()

@@ -304,7 +304,8 @@
     "return": {
       "type": "boolean"
     },
-    "exampleTestcases": "\"()\"\n\"()[]{}\"\n\"(]\"\n\"([)]\"\n\"{[]}\""
+    "exampleTestcases": "\"()\"\n\"()[]{}\"\n\"(]\"\n\"([)]\"\n\"{[]}\"",
+    "exampleResult": "true\ntrue\nfalse\nfalse\ntrue"
   },
   "21": {
     "name": "mergeTwoLists",
@@ -324,7 +325,8 @@
       "type": "ListNode",
       "dealloc": true
     },
-    "exampleTestcases": "[1,2,4]\n[1,3,4]\n[]\n[]\n[]\n[0]"
+    "exampleTestcases": "[1,2,4]\n[1,3,4]\n[]\n[]\n[]\n[0]",
+    "exampleResult": "[1,1,2,3,4,4]\n[]\n[0]"
   },
   "22": {
     "name": "generateParenthesis",
@@ -365,7 +367,8 @@
     "return": {
       "type": "ListNode"
     },
-    "exampleTestcases": "[1,2,3,4]\n[]\n[1]"
+    "exampleTestcases": "[1,2,3,4]\n[]\n[1]",
+    "exampleResult": "[2,1,4,3]\n[]\n[1]"
   },
   "25": {
     "name": "reverseKGroup",
@@ -382,7 +385,8 @@
     "return": {
       "type": "ListNode"
     },
-    "exampleTestcases": "[1,2,3,4,5]\n2\n[1,2,3,4,5]\n3\n[1,2,3,4,5]\n1\n[1]\n1"
+    "exampleTestcases": "[1,2,3,4,5]\n2\n[1,2,3,4,5]\n3\n[1,2,3,4,5]\n1\n[1]\n1",
+    "exampleResult": "[2,1,4,3,5]\n[3,2,1,4,5]\n[1,2,3,4,5]\n[1]"
   },
   "26": {
     "name": "removeDuplicates",

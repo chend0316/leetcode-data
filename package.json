@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "metadata": "node ./src/index.js",
-    "result": "python3 ./src/main.py"
+    "build": "python3 ./src/main.py"
   },
   "keywords": [],
   "author": "chend0316",
