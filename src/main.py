@@ -65,6 +65,8 @@ class Metadata:
             return [int(e) for e in s[1:-1].split(',')]
         elif type == 'string':
             return s[1:-1]
+        elif type == 'string[]':
+            return [e[1:-1] for e in s[1:-1].split(',')]
         elif type == 'boolean':
             return s == 'true'
         elif re.match(r'list<(.+)>', type):
@@ -86,6 +88,8 @@ class Metadata:
             return '[' + ','.join([str(e) for e in v]) + ']'
         elif type == 'string':
             return '"' + v + '"'
+        elif type == 'string[]':
+            return '[' + ['"' + e + '"' for e in v].join(',') + ']'
         elif type == 'boolean':
             return 'true' if v else 'false'
         elif re.match(r'list<(.+)>', type):
