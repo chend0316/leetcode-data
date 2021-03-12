@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/index.js",
-    "build": ""
+    "metadata": "node ./src/index.js",
+    "result": "python3 ./src/main.py"
   },
   "keywords": [],
   "author": "chend0316",

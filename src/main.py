@@ -13,12 +13,13 @@ class Metadata:
         },
         'integer[]': {
             'parse': lambda s : [int(e) for e in s[1:-1].split(',')],
-            'stringify': lambda v: '[' + ','.join(v) + ']'
+            'stringify': lambda v: '[' + ','.join([str(e) for e in v]) + ']'
         }
     }
 
     def __init__(self, filename):
         super().__init__()
+        self.filename = filename
         self.metadata = json.load(open(filename))
     
     def getExampleTestcases(self, problemId: str):
@@ -30,6 +31,13 @@ class Metadata:
             paramType = paramTypes[i % len(paramTypes)]
             params[-1].append(self.converter[paramType]['parse'](paramString))
         return params
+    
+    def setExampleResult(self, problemId: str, result):
+        resultType = self.metadata[problemId]['return']['type']
+        self.metadata[problemId]['exampleResult'] = '\n'.join([self.converter[resultType]['stringify'](r) for r in result])
+    
+    def save(self):
+        json.dump(self.metadata, open(self.filename, 'w'), indent=2)
 
 if __name__ == '__main__':
     pathOfCurrentFile = pathlib.Path(__file__).parent.absolute()
@@ -48,10 +56,14 @@ if __name__ == '__main__':
         moduleName = 'solutions.q' + problemId
         print(problemId + '...')
         Solution = import_module(moduleName).Solution
+        results = []
         for param in metadata.getExampleTestcases(problemId):
             res = execute(Solution, param)
-            print('input: ')
-            print(param)
-            print('output: ')
-            print(res)
+            results.append(res)
+            # print('input: ')
+            # print(param)
+            # print('output: ')
+            # print(res)
         print(problemId + '###')
+        metadata.setExampleResult(problemId, results)
+        metadata.save()
