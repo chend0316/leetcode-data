@@ -21,8 +21,10 @@ problems.forEach((problem) => {
           metaData = JSON.parse(metaData);
           metaData.exampleTestcases = data.data.question.exampleTestcases;
           metaDataById[id] = metaData;
-        } catch (e) { }
-      })
+        } catch (e) {
+          console.error(e);
+        }
+      }).catch((err) => console.error(err))
     ));
   }
 });
