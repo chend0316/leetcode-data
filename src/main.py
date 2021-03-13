@@ -8,10 +8,16 @@ import os
 from solutions.leetcode import ListNode
 
 class Metadata:
-    def __init__(self, filename):
+    def __init__(self, metaFile, testcaseFile, outputFile):
         super().__init__()
-        self.filename = filename
-        self.metadata = json.load(open(filename))
+        self.outputFile = outputFile
+        self.metaFile = metaFile
+        self.metadata = json.load(open(metaFile))
+        testcase = json.load(open(testcaseFile))
+        for id in testcase:
+            if id in self.metadata:
+                self.metadata[id]['exampleTestcases'] += '\n' + testcase[id]['exampleTestcases']
+
     
     def getExampleTestcases(self, problemId: str):
         testcases = self.metadata[problemId]['exampleTestcases']
@@ -55,7 +61,7 @@ class Metadata:
         self.metadata[problemId]['exampleResult'] = '\n'.join(results)
     
     def save(self):
-        json.dump(self.metadata, open(self.filename, 'w'), indent=2)
+        json.dump(self.metadata, open(self.outputFile, 'w'), indent=2)
 
     def __parse(self, type: str, s):
         if type == 'integer':
@@ -106,7 +112,7 @@ class Metadata:
 
 if __name__ == '__main__':
     pathOfCurrentFile = pathlib.Path(__file__).parent.absolute()
-    metadata = Metadata(os.path.join(pathOfCurrentFile, '../dist/data.json'))
+    metadata = Metadata(os.path.join(pathOfCurrentFile, './metadata.json'), os.path.join(pathOfCurrentFile, './testcases.json'), os.path.join(pathOfCurrentFile, '../dist/data.json'))
 
     filenames = glob.glob(os.path.join(pathOfCurrentFile, 'solutions/q*.py'))
     for filename in filenames:
