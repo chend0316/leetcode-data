@@ -106,7 +106,7 @@ class Metadata:
 
 if __name__ == '__main__':
     pathOfCurrentFile = pathlib.Path(__file__).parent.absolute()
-    metadata = Metadata(os.path.join(pathOfCurrentFile, '../dist/metadata.json'))
+    metadata = Metadata(os.path.join(pathOfCurrentFile, '../dist/data.json'))
 
     filenames = glob.glob(os.path.join(pathOfCurrentFile, 'solutions/q*.py'))
     for filename in filenames:
