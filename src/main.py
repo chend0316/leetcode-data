@@ -5,7 +5,7 @@ import json
 import pathlib
 import os
 
-from solutions.leetcode import ListNode
+from solutions.leetcode import ListNode, TreeNode
 
 class Metadata:
     def __init__(self, metaFile, testcaseFile, outputFile):
@@ -63,7 +63,7 @@ class Metadata:
     def save(self):
         json.dump(self.metadata, open(self.outputFile, 'w'), indent=2)
 
-    def __parse(self, type: str, s):
+    def __parse(self, type: str, s: str):
         if type == 'integer':
             return int(s)
         elif type == 'integer[]':
@@ -85,6 +85,23 @@ class Metadata:
                 p.next = ListNode(int(v))
                 p = p.next
             return dummy.next
+        elif type == 'TreeNode':
+            if s == '[]': return None
+            nodes = [TreeNode(int(e)) if e != 'null' else None for e in s[1:-1].split(',')]
+            root = nodes[0]
+            queue = [root]
+            idx = 1
+            while queue:
+                node = queue.pop(0)
+                if idx < len(nodes):
+                    node.left = nodes[idx]
+                    idx += 1
+                if idx < len(nodes):
+                    node.right = nodes[idx]
+                    idx += 1
+                if node.left: queue.append(node.left)
+                if node.right: queue.append(node.right)
+            return root
         raise Exception(type + "不支持")
 
     def __stringify(self, type: str, v):
@@ -108,6 +125,25 @@ class Metadata:
                 res.append(str(p.val))
                 p = p.next
             return '[' + ','.join(res) + ']'
+        elif type == 'TreeNode':
+            res = []
+            queue = []
+            notNoneCnt = 0
+            if v:
+                queue.append(v)
+                notNoneCnt = 1
+            while notNoneCnt:
+                node = queue.pop(0)
+                if node:
+                    notNoneCnt -= 1
+                    res.append(node.val)
+                    queue.append(node.left)
+                    queue.append(node.right)
+                    if node.left: notNoneCnt += 1
+                    if node.right: notNoneCnt += 1
+                else:
+                    res.append(None)
+            return '[' + ','.join(['null' if e is None else str(e) for e in res]) + ']'
         raise Exception(type + "不支持")
 
 if __name__ == '__main__':

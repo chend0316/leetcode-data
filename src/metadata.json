@@ -2949,6 +2949,3137 @@
     },
     "exampleTestcases": "[[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]\n[[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]"
   },
+  "201": {
+    "name": "rangeBitwiseAnd",
+    "params": [
+      {
+        "name": "left",
+        "type": "integer"
+      },
+      {
+        "name": "right",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "5\n7\n0\n0\n1\n2147483647"
+  },
+  "202": {
+    "name": "isHappy",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "19\n2"
+  },
+  "203": {
+    "name": "removeElements",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      },
+      {
+        "name": "val",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    },
+    "exampleTestcases": "[1,2,6,3,4,5,6]\n6\n[]\n1\n[7,7,7,7]\n7"
+  },
+  "204": {
+    "name": "countPrimes",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "10\n0\n1"
+  },
+  "205": {
+    "name": "isIsomorphic",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"egg\"\n\"add\"\n\"foo\"\n\"bar\"\n\"paper\"\n\"title\""
+  },
+  "206": {
+    "name": "reverseList",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    },
+    "exampleTestcases": "[1,2,3,4,5]\n[1,2]\n[]"
+  },
+  "207": {
+    "name": "canFinish",
+    "params": [
+      {
+        "name": "numCourses",
+        "type": "integer"
+      },
+      {
+        "name": "prerequisites",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "2\n[[1,0]]\n2\n[[1,0],[0,1]]"
+  },
+  "208": {
+    "classname": "Trie",
+    "maxbytesperline": 210000,
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "insert",
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Inserts a word into the trie."
+      },
+      {
+        "name": "search",
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Returns if the word is in the trie."
+      },
+      {
+        "name": "startsWith",
+        "params": [
+          {
+            "type": "string",
+            "name": "prefix"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Returns if there is any word in the trie that starts with the given prefix."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]"
+  },
+  "209": {
+    "name": "minSubArrayLen",
+    "params": [
+      {
+        "name": "target",
+        "type": "integer"
+      },
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "7\n[2,3,1,2,4,3]\n4\n[1,4,4]\n11\n[1,1,1,1,1,1,1,1]"
+  },
+  "210": {
+    "name": "findOrder",
+    "params": [
+      {
+        "name": "numCourses",
+        "type": "integer"
+      },
+      {
+        "name": "prerequisites",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "2\n[[1,0]]\n4\n[[1,0],[2,0],[3,1],[3,2]]\n1\n[]"
+  },
+  "211": {
+    "classname": "WordDictionary",
+    "maxbytesperline": 400000,
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "name": "addWord",
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "name": "search",
+        "return": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]"
+  },
+  "212": {
+    "name": "findWords",
+    "params": [
+      {
+        "name": "board",
+        "type": "character[][]"
+      },
+      {
+        "name": "words",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": "[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]]\n[\"oath\",\"pea\",\"eat\",\"rain\"]\n[[\"a\",\"b\"],[\"c\",\"d\"]]\n[\"abcb\"]"
+  },
+  "213": {
+    "name": "rob",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[2,3,2]\n[1,2,3,1]\n[0]"
+  },
+  "214": {
+    "name": "shortestPalindrome",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "\"aacecaaa\"\n\"abcd\""
+  },
+  "215": {
+    "name": "findKthLargest",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,2,1,5,6,4]\n2\n[3,2,3,1,2,4,5,5,6]\n4"
+  },
+  "216": {
+    "name": "combinationSum3",
+    "params": [
+      {
+        "name": "k",
+        "type": "integer"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "dealloc": true
+    },
+    "exampleTestcases": "3\n7\n3\n9\n4\n1\n3\n2\n9\n45"
+  },
+  "217": {
+    "name": "containsDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,2,3,1]\n[1,2,3,4]\n[1,1,1,3,3,4,3,2,4,2]"
+  },
+  "218": {
+    "name": "getSkyline",
+    "params": [
+      {
+        "name": "buildings",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "colsize": 2,
+      "dealloc": true
+    },
+    "exampleTestcases": "[[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]\n[[0,2,3],[2,5,3]]"
+  },
+  "219": {
+    "name": "containsNearbyDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,2,3,1]\n3\n[1,0,1,1]\n1\n[1,2,3,1,2,3]\n2"
+  },
+  "220": {
+    "name": "containsNearbyAlmostDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      },
+      {
+        "name": "t",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,2,3,1]\n3\n0\n[1,0,1,1]\n1\n2\n[1,5,9,1,5,9]\n2\n3"
+  },
+  "221": {
+    "name": "maximalSquare",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "character[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]\n[[\"0\",\"1\"],[\"1\",\"0\"]]\n[[\"0\"]]"
+  },
+  "222": {
+    "name": "countNodes",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,3,4,5,6]\n[]\n[1]"
+  },
+  "223": {
+    "name": "computeArea",
+    "params": [
+      {
+        "name": "A",
+        "type": "integer"
+      },
+      {
+        "name": "B",
+        "type": "integer"
+      },
+      {
+        "name": "C",
+        "type": "integer"
+      },
+      {
+        "name": "D",
+        "type": "integer"
+      },
+      {
+        "name": "E",
+        "type": "integer"
+      },
+      {
+        "name": "F",
+        "type": "integer"
+      },
+      {
+        "name": "G",
+        "type": "integer"
+      },
+      {
+        "name": "H",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "-3\n0\n3\n4\n0\n-1\n9\n2"
+  },
+  "224": {
+    "name": "calculate",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"1 + 1\"\n\" 2-1 + 2 \"\n\"(1+(4+5+2)-3)+(6+8)\""
+  },
+  "225": {
+    "classname": "MyStack",
+    "constructor": {
+      "params": [
+        {
+          "type": "integer",
+          "name": "maxSize",
+          "lang": "c",
+          "value": "64000"
+        }
+      ],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "push",
+        "params": [
+          {
+            "type": "integer",
+            "name": "x"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Push element x onto stack."
+      },
+      {
+        "name": "pop",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "comment": "Removes the element on top of the stack and returns that element."
+      },
+      {
+        "name": "top",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "comment": "Get the top element."
+      },
+      {
+        "name": "empty",
+        "params": [],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Returns whether the stack is empty."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]"
+  },
+  "226": {
+    "name": "invertTree",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "TreeNode"
+    },
+    "exampleTestcases": "[4,2,7,1,3,6,9]\n[2,1,3]\n[]"
+  },
+  "227": {
+    "name": "calculate",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"3+2*2\"\n\" 3/2 \"\n\" 3+5 / 2 \""
+  },
+  "228": {
+    "name": "summaryRanges",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": "[0,1,2,4,5,7]\n[0,2,3,4,6,8,9]\n[]\n[-1]\n[0]"
+  },
+  "229": {
+    "name": "majorityElement",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": "[3,2,3]\n[1]\n[1,2]"
+  },
+  "230": {
+    "name": "kthSmallest",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,1,4,null,2]\n1\n[5,3,6,2,4,null,null,1]\n3"
+  },
+  "231": {
+    "name": "isPowerOfTwo",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "1\n16\n3\n4\n5"
+  },
+  "232": {
+    "classname": "MyQueue",
+    "constructor": {
+      "params": [
+        {
+          "type": "integer",
+          "name": "maxSize",
+          "lang": "c",
+          "value": "64000"
+        }
+      ],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "push",
+        "params": [
+          {
+            "type": "integer",
+            "name": "x"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Push element x to the back of queue."
+      },
+      {
+        "name": "pop",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "comment": "Removes the element from in front of queue and returns that element."
+      },
+      {
+        "name": "peek",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "comment": "Get the front element."
+      },
+      {
+        "name": "empty",
+        "params": [],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Returns whether the queue is empty."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"MyQueue\",\"push\",\"push\",\"peek\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]"
+  },
+  "233": {
+    "name": "countDigitOne",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "13\n0"
+  },
+  "234": {
+    "name": "isPalindrome",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,2,2,1]\n[1,2]"
+  },
+  "235": {
+    "name": "lowestCommonAncestor",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "p",
+        "type": "integer"
+      },
+      {
+        "name": "q",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "TreeNode"
+    },
+    "manual": true,
+    "exampleTestcases": "[6,2,8,0,4,7,9,null,null,3,5]\n2\n8\n[6,2,8,0,4,7,9,null,null,3,5]\n2\n4\n[2,1]\n2\n1"
+  },
+  "236": {
+    "name": "lowestCommonAncestor",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "p",
+        "type": "integer"
+      },
+      {
+        "name": "q",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "TreeNode"
+    },
+    "manual": true,
+    "exampleTestcases": "[3,5,1,6,2,0,8,null,null,7,4]\n5\n1\n[3,5,1,6,2,0,8,null,null,7,4]\n5\n4\n[1,2]\n1\n2"
+  },
+  "237": {
+    "name": "deleteNode",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode"
+      },
+      {
+        "name": "node",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    },
+    "manual": true,
+    "languages": [
+      "cpp",
+      "java",
+      "python",
+      "c",
+      "csharp",
+      "javascript",
+      "ruby",
+      "swift",
+      "golang",
+      "python3",
+      "scala",
+      "kotlin",
+      "php",
+      "typescript"
+    ],
+    "exampleTestcases": "[4,5,1,9]\n5\n[4,5,1,9]\n1\n[1,2,3,4]\n3\n[0,1]\n0\n[-3,5,-99]\n-3"
+  },
+  "238": {
+    "name": "productExceptSelf",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": ""
+  },
+  "239": {
+    "name": "maxSlidingWindow",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[1,3,-1,-3,5,3,6,7]\n3\n[1]\n1\n[1,-1]\n1\n[9,11]\n2\n[4,-2]\n2"
+  },
+  "240": {
+    "name": "searchMatrix",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "manual": true,
+    "exampleTestcases": "[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]\n5\n[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]\n20"
+  },
+  "241": {
+    "name": "diffWaysToCompute",
+    "params": [
+      {
+        "name": "expression",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": "\"2-1-1\"\n\"2*3-4*5\""
+  },
+  "242": {
+    "name": "isAnagram",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"anagram\"\n\"nagaram\"\n\"rat\"\n\"car\""
+  },
+  "257": {
+    "name": "binaryTreePaths",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "list<string>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[1,2,3,null,5]\n[1]"
+  },
+  "258": {
+    "name": "addDigits",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "38\n0"
+  },
+  "260": {
+    "name": "singleNumber",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[1,2,1,3,2,5]\n[-1,0]\n[0,1]"
+  },
+  "263": {
+    "name": "isUgly",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "6\n8\n14\n1"
+  },
+  "264": {
+    "name": "nthUglyNumber",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "10\n1"
+  },
+  "268": {
+    "name": "missingNumber",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,0,1]\n[0,1]\n[9,6,4,2,3,5,7,0,1]\n[0]"
+  },
+  "273": {
+    "name": "numberToWords",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "123\n12345\n1234567\n1234567891"
+  },
+  "274": {
+    "name": "hIndex",
+    "params": [
+      {
+        "name": "citations",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,0,6,1,5]\n[1,3,1]"
+  },
+  "275": {
+    "name": "hIndex",
+    "params": [
+      {
+        "name": "citations",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[0,1,3,5,6]\n[1,2,100]"
+  },
+  "278": {
+    "name": "firstBadVersion",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "bad",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": true,
+    "exampleTestcases": "5\n4\n1\n1"
+  },
+  "279": {
+    "name": "numSquares",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "12\n13"
+  },
+  "282": {
+    "name": "addOperators",
+    "params": [
+      {
+        "name": "num",
+        "type": "string"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": "\"123\"\n6\n\"232\"\n8\n\"105\"\n5\n\"00\"\n0\n\"3456237490\"\n9191"
+  },
+  "283": {
+    "name": "moveZeroes",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    },
+    "exampleTestcases": "[0,1,0,3,12]\n[0]"
+  },
+  "284": {
+    "name": "PeekingIterator",
+    "params": [
+      {
+        "name": "nums",
+        "type": "list<integer>"
+      },
+      {
+        "name": "commands",
+        "type": "list<integer>"
+      }
+    ],
+    "return": {
+      "type": "list<string>",
+      "dealloc": true
+    },
+    "languages": [
+      "cpp",
+      "java",
+      "python",
+      "python3",
+      "csharp",
+      "golang",
+      "ruby",
+      "kotlin",
+      "scala",
+      "swift",
+      "php",
+      "c",
+      "javascript",
+      "typescript"
+    ],
+    "manual": true,
+    "exampleTestcases": "[\"PeekingIterator\",\"next\",\"peek\",\"next\",\"next\",\"hasNext\"]\n[[[1,2,3]],[],[],[],[],[]]"
+  },
+  "287": {
+    "name": "findDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,3,4,2,2]\n[3,1,3,4,2]\n[1,1]\n[1,1,2]"
+  },
+  "289": {
+    "name": "gameOfLife",
+    "params": [
+      {
+        "name": "board",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    },
+    "exampleTestcases": "[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]\n[[1,1],[1,0]]"
+  },
+  "290": {
+    "name": "wordPattern",
+    "params": [
+      {
+        "name": "pattern",
+        "type": "string"
+      },
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"abba\"\n\"dog cat cat dog\"\n\"abba\"\n\"dog cat cat fish\"\n\"aaaa\"\n\"dog cat cat dog\"\n\"abba\"\n\"dog dog dog dog\""
+  },
+  "292": {
+    "name": "canWinNim",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "4\n1\n2"
+  },
+  "295": {
+    "classname": "MedianFinder",
+    "maxbytesperline": 410000,
+    "constructor": {
+      "params": [],
+      "comment": "initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "addNum",
+        "params": [
+          {
+            "type": "integer",
+            "name": "num"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "name": "findMedian",
+        "params": [],
+        "return": {
+          "type": "double"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]"
+  },
+  "297": {
+    "name": "Codec",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "manual": true,
+    "exampleTestcases": "[1,2,3,null,null,4,5]\n[]\n[1]\n[1,2]"
+  },
+  "299": {
+    "name": "getHint",
+    "params": [
+      {
+        "name": "secret",
+        "type": "string"
+      },
+      {
+        "name": "guess",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "\"1807\"\n\"7810\"\n\"1123\"\n\"0111\"\n\"1\"\n\"0\"\n\"1\"\n\"1\""
+  },
+  "300": {
+    "name": "lengthOfLIS",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[10,9,2,5,3,7,101,18]\n[0,1,0,3,2,3]\n[7,7,7,7,7,7,7]"
+  },
+  "301": {
+    "name": "removeInvalidParentheses",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": "\"()())()\"\n\"(a)())()\"\n\")(\""
+  },
+  "303": {
+    "classname": "NumArray",
+    "maxbytesperline": 135000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer[]",
+          "name": "nums"
+        },
+        {
+          "type": "integer",
+          "name": "numsSize",
+          "lang": "c",
+          "value": "size_1"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "sumRange",
+        "params": [
+          {
+            "type": "integer",
+            "name": "left"
+          },
+          {
+            "type": "integer",
+            "name": "right"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"NumArray\",\"sumRange\",\"sumRange\",\"sumRange\"]\n[[[-2,0,3,-5,2,-1]],[0,2],[2,5],[0,5]]"
+  },
+  "304": {
+    "classname": "NumMatrix",
+    "maxbytesperline": 150000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer[][]",
+          "name": "matrix"
+        },
+        {
+          "type": "integer",
+          "name": "matrixRowSize",
+          "lang": "c",
+          "value": "size_1"
+        },
+        {
+          "type": "integer",
+          "name": "matrixColSize",
+          "lang": "c",
+          "value": "col_size_1"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "sumRegion",
+        "params": [
+          {
+            "type": "integer",
+            "name": "row1"
+          },
+          {
+            "type": "integer",
+            "name": "col1"
+          },
+          {
+            "type": "integer",
+            "name": "row2"
+          },
+          {
+            "type": "integer",
+            "name": "col2"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"NumMatrix\",\"sumRegion\",\"sumRegion\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]]"
+  },
+  "306": {
+    "name": "isAdditiveNumber",
+    "params": [
+      {
+        "name": "num",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"112358\"\n\"199100199\""
+  },
+  "307": {
+    "classname": "NumArray",
+    "maxbytesperline": 170000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer[]",
+          "name": "nums"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "update",
+        "params": [
+          {
+            "type": "integer",
+            "name": "index"
+          },
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "name": "sumRange",
+        "params": [
+          {
+            "type": "integer",
+            "name": "left"
+          },
+          {
+            "type": "integer",
+            "name": "right"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"NumArray\",\"sumRange\",\"update\",\"sumRange\"]\n[[[1,3,5]],[0,2],[1,2],[0,2]]"
+  },
+  "309": {
+    "name": "maxProfit",
+    "params": [
+      {
+        "name": "prices",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,3,0,2]\n[1]"
+  },
+  "310": {
+    "name": "findMinHeightTrees",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "edges",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": "4\n[[1,0],[1,2],[1,3]]\n6\n[[3,0],[3,1],[3,2],[3,4],[5,4]]\n1\n[]\n2\n[[0,1]]"
+  },
+  "312": {
+    "name": "maxCoins",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,1,5,8]\n[1,5]"
+  },
+  "313": {
+    "name": "nthSuperUglyNumber",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "primes",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "12\n[2,7,13,19]\n1\n[2,3,5]"
+  },
+  "315": {
+    "name": "countSmaller",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[5,2,6,1]\n[-1]\n[-1,-1]"
+  },
+  "316": {
+    "name": "removeDuplicateLetters",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "\"bcabc\"\n\"cbacdcbc\""
+  },
+  "318": {
+    "name": "maxProduct",
+    "params": [
+      {
+        "name": "words",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\"]\n[\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\"]"
+  },
+  "319": {
+    "name": "bulbSwitch",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "3\n0\n1"
+  },
+  "321": {
+    "name": "maxNumber",
+    "params": [
+      {
+        "name": "nums1",
+        "type": "integer[]"
+      },
+      {
+        "name": "nums2",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[3,4,6,5]\n[9,1,2,5,8,3]\n5\n[6,7]\n[6,0,4]\n5\n[3,9]\n[8,9]\n3"
+  },
+  "322": {
+    "name": "coinChange",
+    "params": [
+      {
+        "name": "coins",
+        "type": "integer[]"
+      },
+      {
+        "name": "amount",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,5]\n11\n[2]\n3\n[1]\n0\n[1]\n1\n[1]\n2"
+  },
+  "324": {
+    "name": "wiggleSort",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    },
+    "exampleTestcases": "[1,5,1,1,6,4]\n[1,3,2,2,3,1]"
+  },
+  "326": {
+    "name": "isPowerOfThree",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "27\n0\n9\n45"
+  },
+  "327": {
+    "name": "countRangeSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "lower",
+        "type": "integer"
+      },
+      {
+        "name": "upper",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[-2,5,-1]\n-2\n2\n[0]\n0\n0"
+  },
+  "328": {
+    "name": "oddEvenList",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    },
+    "exampleTestcases": "[1,2,3,4,5]\n[2,1,3,5,6,4,7]"
+  },
+  "329": {
+    "name": "longestIncreasingPath",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[9,9,4],[6,6,8],[2,1,1]]\n[[3,4,5],[3,2,6],[2,2,1]]\n[[1]]"
+  },
+  "330": {
+    "name": "minPatches",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,3]\n6\n[1,5,10]\n20\n[1,2,2]\n5"
+  },
+  "331": {
+    "name": "isValidSerialization",
+    "params": [
+      {
+        "name": "preorder",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"9,3,4,#,#,1,#,#,2,#,6,#,#\"\n\"1,#\"\n\"9,#,#,1\""
+  },
+  "332": {
+    "name": "findItinerary",
+    "params": [
+      {
+        "name": "tickets",
+        "type": "list<list<string>>"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]\n[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]"
+  },
+  "334": {
+    "name": "increasingTriplet",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,2,3,4,5]\n[5,4,3,2,1]\n[2,1,5,0,4,6]"
+  },
+  "335": {
+    "name": "isSelfCrossing",
+    "params": [
+      {
+        "name": "distance",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[2,1,1,2]\n[1,2,3,4]\n[1,1,1,1]"
+  },
+  "336": {
+    "name": "palindromePairs",
+    "params": [
+      {
+        "name": "words",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>"
+    },
+    "exampleTestcases": "[\"abcd\",\"dcba\",\"lls\",\"s\",\"sssll\"]\n[\"bat\",\"tab\",\"cat\"]\n[\"a\",\"\"]"
+  },
+  "337": {
+    "name": "rob",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,2,3,null,3,null,1]\n[3,4,5,1,3,null,1]"
+  },
+  "338": {
+    "name": "countBits",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "2\n5"
+  },
+  "341": {
+    "name": "",
+    "params": [
+      {
+        "name": "nestedList",
+        "type": "list<NestedInteger>"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": true,
+    "exampleTestcases": "[[1,1],2,[1,1]]\n[1,[4,[6]]]"
+  },
+  "342": {
+    "name": "isPowerOfFour",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "16\n5\n1"
+  },
+  "343": {
+    "name": "integerBreak",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "2\n10"
+  },
+  "344": {
+    "name": "reverseString",
+    "params": [
+      {
+        "name": "s",
+        "type": "character[]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    },
+    "exampleTestcases": "[\"h\",\"e\",\"l\",\"l\",\"o\"]\n[\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]"
+  },
+  "345": {
+    "name": "reverseVowels",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "\"hello\"\n\"leetcode\""
+  },
+  "347": {
+    "name": "topKFrequent",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[1,1,1,2,2,3]\n2\n[1]\n1"
+  },
+  "349": {
+    "name": "intersection",
+    "params": [
+      {
+        "name": "nums1",
+        "type": "integer[]"
+      },
+      {
+        "name": "nums2",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[1,2,2,1]\n[2,2]\n[4,9,5]\n[9,4,9,8,4]"
+  },
+  "350": {
+    "name": "intersect",
+    "params": [
+      {
+        "name": "nums1",
+        "type": "integer[]"
+      },
+      {
+        "name": "nums2",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[1,2,2,1]\n[2,2]\n[4,9,5]\n[9,4,9,8,4]"
+  },
+  "352": {
+    "classname": "SummaryRanges",
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "addNum",
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "name": "getIntervals",
+        "params": [],
+        "return": {
+          "type": "integer[][]"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "354": {
+    "name": "maxEnvelopes",
+    "params": [
+      {
+        "name": "envelopes",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[5,4],[6,4],[6,7],[2,3]]\n[[1,1],[1,1],[1,1]]"
+  },
+  "355": {
+    "classname": "Twitter",
+    "maxbytesperline": 170000,
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "postTweet",
+        "params": [
+          {
+            "type": "integer",
+            "name": "userId"
+          },
+          {
+            "type": "integer",
+            "name": "tweetId"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Compose a new tweet."
+      },
+      {
+        "name": "getNewsFeed",
+        "params": [
+          {
+            "type": "integer",
+            "name": "userId"
+          }
+        ],
+        "return": {
+          "type": "list<integer>"
+        },
+        "comment": "Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent."
+      },
+      {
+        "name": "follow",
+        "params": [
+          {
+            "type": "integer",
+            "name": "followerId"
+          },
+          {
+            "type": "integer",
+            "name": "followeeId"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Follower follows a followee. If the operation is invalid, it should be a no-op."
+      },
+      {
+        "name": "unfollow",
+        "params": [
+          {
+            "type": "integer",
+            "name": "followerId"
+          },
+          {
+            "type": "integer",
+            "name": "followeeId"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Follower unfollows a followee. If the operation is invalid, it should be a no-op."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "357": {
+    "name": "countNumbersWithUniqueDigits",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "2"
+  },
+  "363": {
+    "name": "maxSumSubmatrix",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[1,0,1],[0,-2,3]]\n2"
+  },
+  "365": {
+    "name": "canMeasureWater",
+    "params": [
+      {
+        "name": "x",
+        "type": "integer"
+      },
+      {
+        "name": "y",
+        "type": "integer"
+      },
+      {
+        "name": "z",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": ""
+  },
+  "367": {
+    "name": "isPerfectSquare",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "16\n14"
+  },
+  "368": {
+    "name": "largestDivisibleSubset",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": "[1,2,3]\n[1,2,4,8]"
+  },
+  "371": {
+    "name": "getSum",
+    "params": [
+      {
+        "name": "a",
+        "type": "integer"
+      },
+      {
+        "name": "b",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "1\n2\n2\n3"
+  },
+  "372": {
+    "name": "superPow",
+    "params": [
+      {
+        "name": "a",
+        "type": "integer"
+      },
+      {
+        "name": "b",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "2\n[3]\n2\n[1,0]\n1\n[4,3,3,8,5,2]\n2147483647\n[2,0,0]"
+  },
+  "373": {
+    "name": "kSmallestPairs",
+    "params": [
+      {
+        "name": "nums1",
+        "type": "integer[]"
+      },
+      {
+        "name": "nums2",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>"
+    },
+    "exampleTestcases": "[1,7,11]\n[2,4,6]\n3\n[]\n[]\n5\n[]\n[3,5,7,9]\n1"
+  },
+  "374": {
+    "name": "guessNumber",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "pick",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": true,
+    "exampleTestcases": "10\n6\n1\n1\n2\n1\n2\n2"
+  },
+  "375": {
+    "name": "getMoneyAmount",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "10\n1\n2"
+  },
+  "376": {
+    "name": "wiggleMaxLength",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,7,4,9,2,5]\n[1,17,5,10,13,15,10,5,16,8]\n[1,2,3,4,5,6,7,8,9]"
+  },
+  "377": {
+    "name": "combinationSum4",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "378": {
+    "name": "kthSmallest",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[1,5,9],[10,11,13],[12,13,15]]\n8\n[[-5]]\n1"
+  },
+  "380": {
+    "classname": "RandomizedSet",
+    "maxbytesperline": 121000,
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "insert",
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Inserts a value to the set. Returns true if the set did not already contain the specified element."
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Removes a value from the set. Returns true if the set contained the specified element."
+      },
+      {
+        "name": "getRandom",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "comment": "Get a random element from the set."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"RandomizedSet\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\"]\n[[],[1],[2],[2],[],[1],[2],[]]"
+  },
+  "381": {
+    "classname": "RandomizedCollection",
+    "maxbytesperline": 121000,
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "insert",
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Inserts a value to the collection. Returns true if the collection did not already contain the specified element."
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "comment": "Removes a value from the collection. Returns true if the collection contained the specified element."
+      },
+      {
+        "name": "getRandom",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "comment": "Get a random element from the collection."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "382": {
+    "classname": "Solution",
+    "maxbytesperline": 121000,
+    "constructor": {
+      "params": [
+        {
+          "type": "ListNode",
+          "name": "head"
+        }
+      ],
+      "comment": "@param head The linked list's head.\n        Note that the head is guaranteed to be not null, so it contains at least one node."
+    },
+    "methods": [
+      {
+        "name": "getRandom",
+        "params": [],
+        "return": {
+          "type": "integer"
+        },
+        "deserialize": false,
+        "comment": "Returns a random node's value."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"Solution\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\"]\n[[[1,2,3]],[],[],[],[],[]]"
+  },
+  "383": {
+    "name": "canConstruct",
+    "params": [
+      {
+        "name": "ransomNote",
+        "type": "string"
+      },
+      {
+        "name": "magazine",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"a\"\n\"b\"\n\"aa\"\n\"ab\"\n\"aa\"\n\"aab\""
+  },
+  "384": {
+    "classname": "Solution",
+    "maxbytesperline": 180000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer[]",
+          "name": "nums"
+        },
+        {
+          "type": "integer",
+          "name": "size",
+          "lang": "c",
+          "value": "size_1"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "reset",
+        "params": [],
+        "return": {
+          "type": "integer[]"
+        },
+        "comment": "Resets the array to its original configuration and return it."
+      },
+      {
+        "name": "shuffle",
+        "params": [],
+        "return": {
+          "type": "integer[]"
+        },
+        "comment": "Returns a random shuffling of the array."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"Solution\",\"shuffle\",\"reset\",\"shuffle\"]\n[[[1,2,3]],[],[],[]]"
+  },
+  "385": {
+    "name": "deserialize",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "NestedInteger"
+    },
+    "manual": false,
+    "exampleTestcases": ""
+  },
+  "386": {
+    "name": "lexicalOrder",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": ""
+  },
+  "387": {
+    "name": "firstUniqChar",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "388": {
+    "name": "lengthLongestPath",
+    "params": [
+      {
+        "name": "input",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"\n\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"\n\"a\"\n\"file1.txt\\nfile2.txt\\nlongfile.txt\""
+  },
+  "389": {
+    "name": "findTheDifference",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "character"
+    },
+    "exampleTestcases": "\"abcd\"\n\"abcde\"\n\"\"\n\"y\"\n\"a\"\n\"aa\"\n\"ae\"\n\"aea\""
+  },
+  "390": {
+    "name": "lastRemaining",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "391": {
+    "name": "isRectangleCover",
+    "params": [
+      {
+        "name": "rectangles",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": ""
+  },
+  "392": {
+    "name": "isSubsequence",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"abc\"\n\"ahbgdc\"\n\"axc\"\n\"ahbgdc\""
+  },
+  "393": {
+    "name": "validUtf8",
+    "params": [
+      {
+        "name": "data",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": ""
+  },
+  "394": {
+    "name": "decodeString",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "\"3[a]2[bc]\"\n\"3[a2[c]]\"\n\"2[abc]3[cd]ef\"\n\"abc3[cd]xyz\""
+  },
+  "395": {
+    "name": "longestSubstring",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"aaabb\"\n3\n\"ababbc\"\n2"
+  },
+  "396": {
+    "name": "maxRotateFunction",
+    "params": [
+      {
+        "name": "A",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "397": {
+    "name": "integerReplacement",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "8\n7\n4"
+  },
+  "398": {
+    "classname": "Solution",
+    "constructor": {
+      "params": [
+        {
+          "name": "nums",
+          "type": "integer[]"
+        },
+        {
+          "type": "integer",
+          "name": "numsSize",
+          "lang": "c",
+          "value": "size_1"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "pick",
+        "params": [
+          {
+            "name": "target",
+            "type": "integer"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "399": {
+    "name": "calcEquation",
+    "params": [
+      {
+        "name": "equations",
+        "type": "list<list<string>>"
+      },
+      {
+        "name": "values",
+        "type": "double[]"
+      },
+      {
+        "name": "queries",
+        "type": "list<list<string>>"
+      }
+    ],
+    "return": {
+      "type": "double[]"
+    },
+    "exampleTestcases": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]\n[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[1.5,2.5,5.0]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]\n[[\"a\",\"b\"]]\n[0.5]\n[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]"
+  },
+  "400": {
+    "name": "findNthDigit",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "401": {
+    "name": "readBinaryWatch",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": ""
+  },
+  "402": {
+    "name": "removeKdigits",
+    "params": [
+      {
+        "name": "num",
+        "type": "string"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "403": {
+    "name": "canCross",
+    "params": [
+      {
+        "name": "stones",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[0,1,3,5,6,8,12,17]\n[0,1,2,3,4,8,9,11]"
+  },
+  "404": {
+    "name": "sumOfLeftLeaves",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "405": {
+    "name": "toHex",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "406": {
+    "name": "reconstructQueue",
+    "params": [
+      {
+        "name": "people",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[][]",
+      "colsize": "2"
+    },
+    "exampleTestcases": "[[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]\n[[6,0],[5,0],[4,0],[3,2],[2,2],[1,4]]"
+  },
+  "407": {
+    "name": "trapRainWater",
+    "params": [
+      {
+        "name": "heightMap",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "409": {
+    "name": "longestPalindrome",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"abccccdd\"\n\"a\"\n\"bb\""
+  },
+  "410": {
+    "name": "splitArray",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "m",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[7,2,5,10,8]\n2\n[1,2,3,4,5]\n2\n[1,4,4]\n3"
+  },
+  "412": {
+    "name": "fizzBuzz",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": ""
+  },
+  "413": {
+    "name": "numberOfArithmeticSlices",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,3,4]\n[1]"
+  },
+  "414": {
+    "name": "thirdMax",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,2,1]\n[1,2]\n[2,2,3,1]"
+  },
+  "415": {
+    "name": "addStrings",
+    "params": [
+      {
+        "name": "num1",
+        "type": "string"
+      },
+      {
+        "name": "num2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "416": {
+    "name": "canPartition",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,5,11,5]\n[1,2,3,5]"
+  },
+  "417": {
+    "name": "pacificAtlantic",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>"
+    },
+    "exampleTestcases": ""
+  },
+  "419": {
+    "name": "countBattleships",
+    "params": [
+      {
+        "name": "board",
+        "type": "character[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "420": {
+    "name": "strongPasswordChecker",
+    "params": [
+      {
+        "name": "password",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"a\"\n\"aA1\"\n\"1337C0d3\""
+  },
+  "421": {
+    "name": "findMaximumXOR",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[3,10,5,25,2,8]\n[0]\n[2,4]\n[8,10,2]\n[14,70,53,83,49,91,36,80,92,51,66,70]"
+  },
+  "423": {
+    "name": "originalDigits",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "424": {
+    "name": "characterReplacement",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "432": {
+    "classname": "AllOne",
+    "constructor": {
+      "params": [],
+      "comment": "Initialize your data structure here."
+    },
+    "methods": [
+      {
+        "name": "inc",
+        "params": [
+          {
+            "type": "string",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Inserts a new key <Key> with value 1. Or increments an existing key by 1."
+      },
+      {
+        "name": "dec",
+        "params": [
+          {
+            "type": "string",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "comment": "Decrements an existing key by 1. If Key's value is 1, remove it from the data structure."
+      },
+      {
+        "name": "getMaxKey",
+        "params": [],
+        "return": {
+          "type": "string"
+        },
+        "comment": "Returns one of the keys with maximal value."
+      },
+      {
+        "name": "getMinKey",
+        "params": [],
+        "return": {
+          "type": "string"
+        },
+        "comment": "Returns one of the keys with Minimal value."
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "433": {
+    "name": "minMutation",
+    "params": [
+      {
+        "name": "start",
+        "type": "string"
+      },
+      {
+        "name": "end",
+        "type": "string"
+      },
+      {
+        "name": "bank",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
   "434": {
     "name": "countSegments",
     "params": [
@@ -2961,6 +6092,867 @@
       "type": "integer"
     },
     "exampleTestcases": "\"Hello, my name is John\"\n\"Hello\"\n\"love live! mu'sic forever\"\n\"\""
+  },
+  "435": {
+    "name": "eraseOverlapIntervals",
+    "params": [
+      {
+        "name": "intervals",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "436": {
+    "name": "findRightInterval",
+    "params": [
+      {
+        "name": "intervals",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[[1,2]]\n[[3,4],[2,3],[1,2]]\n[[1,4],[2,3],[3,4]]"
+  },
+  "437": {
+    "name": "pathSum",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "sum",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "438": {
+    "name": "findAnagrams",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "p",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": ""
+  },
+  "440": {
+    "name": "findKthNumber",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "441": {
+    "name": "arrangeCoins",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "442": {
+    "name": "findDuplicates",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": ""
+  },
+  "443": {
+    "name": "compress",
+    "params": [
+      {
+        "name": "chars",
+        "type": "character[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "output": {
+      "paramindex": 0,
+      "size": "ret"
+    },
+    "exampleTestcases": "[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\",\"c\"]\n[\"a\"]\n[\"a\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\"]\n[\"a\",\"a\",\"a\",\"b\",\"b\",\"a\",\"a\"]"
+  },
+  "445": {
+    "name": "addTwoNumbers",
+    "params": [
+      {
+        "name": "l1",
+        "type": "ListNode",
+        "dealloc": false
+      },
+      {
+        "name": "l2",
+        "type": "ListNode",
+        "dealloc": false
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "446": {
+    "name": "numberOfArithmeticSlices",
+    "params": [
+      {
+        "name": "A",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "447": {
+    "name": "numberOfBoomerangs",
+    "params": [
+      {
+        "name": "points",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[0,0],[1,0],[2,0]]\n[[1,1],[2,2],[3,3]]\n[[1,1]]"
+  },
+  "448": {
+    "name": "findDisappearedNumbers",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    },
+    "exampleTestcases": ""
+  },
+  "449": {
+    "name": "CodecDriver",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "TreeNode"
+    },
+    "manual": true,
+    "exampleTestcases": "[2,1,3]\n[]"
+  },
+  "450": {
+    "name": "deleteNode",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode",
+        "dealloc": false
+      },
+      {
+        "name": "key",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "TreeNode"
+    },
+    "exampleTestcases": "[5,3,6,2,4,null,7]\n3\n[5,3,6,2,4,null,7]\n0\n[]\n0"
+  },
+  "451": {
+    "name": "frequencySort",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "452": {
+    "name": "findMinArrowShots",
+    "params": [
+      {
+        "name": "points",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[10,16],[2,8],[1,6],[7,12]]\n[[1,2],[3,4],[5,6],[7,8]]\n[[1,2],[2,3],[3,4],[4,5]]\n[[1,2]]\n[[2,3],[2,3]]"
+  },
+  "453": {
+    "name": "minMoves",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,3]\n[1,1,1]"
+  },
+  "454": {
+    "name": "fourSumCount",
+    "params": [
+      {
+        "name": "A",
+        "type": "integer[]"
+      },
+      {
+        "name": "B",
+        "type": "integer[]"
+      },
+      {
+        "name": "C",
+        "type": "integer[]"
+      },
+      {
+        "name": "D",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "455": {
+    "name": "findContentChildren",
+    "params": [
+      {
+        "name": "g",
+        "type": "integer[]"
+      },
+      {
+        "name": "s",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,3]\n[1,1]\n[1,2]\n[1,2,3]"
+  },
+  "456": {
+    "name": "find132pattern",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[1,2,3,4]\n[3,1,4,2]\n[-1,3,2,0]"
+  },
+  "457": {
+    "name": "circularArrayLoop",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "[2,-1,1,2,2]\n[-1,2]\n[-2,1,-1,-2,-2]"
+  },
+  "458": {
+    "name": "poorPigs",
+    "params": [
+      {
+        "name": "buckets",
+        "type": "integer"
+      },
+      {
+        "name": "minutesToDie",
+        "type": "integer"
+      },
+      {
+        "name": "minutesToTest",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "1000\n15\n60\n4\n15\n15\n4\n15\n30"
+  },
+  "459": {
+    "name": "repeatedSubstringPattern",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "\"abab\"\n\"aba\"\n\"abcabcabcabc\""
+  },
+  "460": {
+    "classname": "LFUCache",
+    "maxbytesperline": 200000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer",
+          "name": "capacity"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "get",
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      },
+      {
+        "name": "put",
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          },
+          {
+            "type": "integer",
+            "name": "value"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    },
+    "exampleTestcases": "[\"LFUCache\",\"put\",\"put\",\"get\",\"put\",\"get\",\"get\",\"put\",\"get\",\"get\",\"get\"]\n[[2],[1,1],[2,2],[1],[3,3],[2],[3],[4,4],[1],[3],[4]]"
+  },
+  "461": {
+    "name": "hammingDistance",
+    "params": [
+      {
+        "name": "x",
+        "type": "integer"
+      },
+      {
+        "name": "y",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "462": {
+    "name": "minMoves2",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "463": {
+    "name": "islandPerimeter",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]\n[[1]]\n[[1,0]]"
+  },
+  "464": {
+    "name": "canIWin",
+    "params": [
+      {
+        "name": "maxChoosableInteger",
+        "type": "integer"
+      },
+      {
+        "name": "desiredTotal",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": "10\n11\n10\n0\n10\n1"
+  },
+  "466": {
+    "name": "getMaxRepetitions",
+    "params": [
+      {
+        "name": "s1",
+        "type": "string"
+      },
+      {
+        "name": "n1",
+        "type": "integer"
+      },
+      {
+        "name": "s2",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "467": {
+    "name": "findSubstringInWraproundString",
+    "params": [
+      {
+        "name": "p",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "468": {
+    "name": "validIPAddress",
+    "params": [
+      {
+        "name": "IP",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "\"172.16.254.1\"\n\"2001:0db8:85a3:0:0:8A2E:0370:7334\"\n\"256.256.256.256\"\n\"2001:0db8:85a3:0:0:8A2E:0370:7334:\"\n\"1e1.4.5.6\""
+  },
+  "472": {
+    "name": "findAllConcatenatedWordsInADict",
+    "params": [
+      {
+        "name": "words",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "exampleTestcases": "[\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]\n[\"cat\",\"dog\",\"catdog\"]"
+  },
+  "473": {
+    "name": "makesquare",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": ""
+  },
+  "474": {
+    "name": "findMaxForm",
+    "params": [
+      {
+        "name": "strs",
+        "type": "string[]"
+      },
+      {
+        "name": "m",
+        "type": "integer"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[\"10\",\"0001\",\"111001\",\"1\",\"0\"]\n5\n3\n[\"10\",\"0\",\"1\"]\n1\n1"
+  },
+  "475": {
+    "name": "findRadius",
+    "params": [
+      {
+        "name": "houses",
+        "type": "integer[]"
+      },
+      {
+        "name": "heaters",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "[1,2,3]\n[2]\n[1,2,3,4]\n[1,4]\n[1,5]\n[2]"
+  },
+  "476": {
+    "name": "findComplement",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "5\n1"
+  },
+  "477": {
+    "name": "totalHammingDistance",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "479": {
+    "name": "largestPalindrome",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "480": {
+    "name": "medianSlidingWindow",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "double[]"
+    },
+    "exampleTestcases": ""
+  },
+  "481": {
+    "name": "magicalString",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "482": {
+    "name": "licenseKeyFormatting",
+    "params": [
+      {
+        "name": "S",
+        "type": "string"
+      },
+      {
+        "name": "K",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "483": {
+    "name": "smallestGoodBase",
+    "params": [
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": ""
+  },
+  "485": {
+    "name": "findMaxConsecutiveOnes",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "486": {
+    "name": "PredictTheWinner",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "exampleTestcases": ""
+  },
+  "488": {
+    "name": "findMinStep",
+    "params": [
+      {
+        "name": "board",
+        "type": "string"
+      },
+      {
+        "name": "hand",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": "\"WRRBBW\"\n\"RB\"\n\"WWRRBBWW\"\n\"WRBRW\"\n\"G\"\n\"GGGGG\"\n\"RBYYBBRRB\"\n\"YRBGB\""
+  },
+  "489": {
+    "name": "kthSmallestPath",
+    "params": [
+      {
+        "name": "destination",
+        "type": "integer[]"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "exampleTestcases": "[2,3]\n1\n[2,3]\n2\n[2,3]\n3"
+  },
+  "491": {
+    "name": "findSubsequences",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "dealloc": true
+    },
+    "exampleTestcases": ""
+  },
+  "492": {
+    "name": "constructRectangle",
+    "params": [
+      {
+        "name": "area",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "4\n37\n122122"
+  },
+  "493": {
+    "name": "reversePairs",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "494": {
+    "name": "findTargetSumWays",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "S",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "495": {
+    "name": "findPoisonedDuration",
+    "params": [
+      {
+        "name": "timeSeries",
+        "type": "integer[]"
+      },
+      {
+        "name": "duration",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "exampleTestcases": ""
+  },
+  "496": {
+    "name": "nextGreaterElement",
+    "params": [
+      {
+        "name": "nums1",
+        "type": "integer[]"
+      },
+      {
+        "name": "nums2",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": "[4,1,2]\n[1,3,4,2]\n[2,4]\n[1,2,3,4]"
+  },
+  "498": {
+    "name": "findDiagonalOrder",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    },
+    "exampleTestcases": ""
+  },
+  "500": {
+    "name": "findWords",
+    "params": [
+      {
+        "name": "words",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "string[]"
+    },
+    "exampleTestcases": "[\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]\n[\"omk\"]\n[\"adsdf\",\"sfd\"]"
   },
   "543": {
     "name": "diameterOfBinaryTree",
