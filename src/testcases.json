@@ -5,6 +5,9 @@
   "4": {
     "exampleTestcases": "[3]\n[-2,-1]"
   },
+  "5": {
+    "exampleTestcases": "\"cbbd\""
+  },
   "15": {
     "exampleTestcases": "[-1,0,1,2,-1,-4,-2,-3,3,0,4]"
   },
@@ -13,5 +16,8 @@
   },
   "20": {
     "exampleTestcases": "\"[\""
+  },
+  "152": {
+    "exampleTestcases": "[0,2]\n[-4,-3,-2]"
   }
 }
