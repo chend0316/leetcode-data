@@ -1942,7 +1942,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "[7,1,5,3,6,4]\n[7,6,4,3,1]"
+    "exampleTestcases": "[7,1,5,3,6,4]\n[7,6,4,3,1]",
+    "exampleResult": "5\n0"
   },
   "122": {
     "name": "maxProfit",
@@ -1955,7 +1956,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "[7,1,5,3,6,4]\n[1,2,3,4,5]\n[7,6,4,3,1]"
+    "exampleTestcases": "[7,1,5,3,6,4]\n[1,2,3,4,5]\n[7,6,4,3,1]",
+    "exampleResult": "7\n4\n0"
   },
   "123": {
     "name": "maxProfit",
