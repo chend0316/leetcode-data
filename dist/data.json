@@ -1970,7 +1970,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "[3,3,5,0,0,3,1,4]\n[1,2,3,4,5]\n[7,6,4,3,1]\n[1]"
+    "exampleTestcases": "[3,3,5,0,0,3,1,4]\n[1,2,3,4,5]\n[7,6,4,3,1]\n[1]",
+    "exampleResult": "6\n4\n0\n0"
   },
   "124": {
     "name": "maxPathSum",
