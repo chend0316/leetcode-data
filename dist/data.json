@@ -157,7 +157,8 @@
     "return": {
       "type": "boolean"
     },
-    "exampleTestcases": "\"aa\"\n\"a\"\n\"aa\"\n\"a*\"\n\"ab\"\n\".*\"\n\"aab\"\n\"c*a*b\"\n\"mississippi\"\n\"mis*is*p*.\""
+    "exampleTestcases": "\"aa\"\n\"a\"\n\"aa\"\n\"a*\"\n\"ab\"\n\".*\"\n\"aab\"\n\"c*a*b\"\n\"mississippi\"\n\"mis*is*p*.\"",
+    "exampleResult": "false\ntrue\ntrue\ntrue\nfalse"
   },
   "11": {
     "name": "maxArea",
@@ -701,7 +702,8 @@
     "return": {
       "type": "boolean"
     },
-    "exampleTestcases": "\"aa\"\n\"a\"\n\"aa\"\n\"*\"\n\"cb\"\n\"?a\"\n\"adceb\"\n\"*a*b\"\n\"acdcb\"\n\"a*c?b\""
+    "exampleTestcases": "\"aa\"\n\"a\"\n\"aa\"\n\"*\"\n\"cb\"\n\"?a\"\n\"adceb\"\n\"*a*b\"\n\"acdcb\"\n\"a*c?b\"",
+    "exampleResult": "false\ntrue\nfalse\ntrue\nfalse"
   },
   "45": {
     "name": "jump",
@@ -974,7 +976,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "3\n7\n3\n2\n7\n3\n3\n3"
+    "exampleTestcases": "3\n7\n3\n2\n7\n3\n3\n3",
+    "exampleResult": "28\n3\n28\n6"
   },
   "63": {
     "name": "uniquePathsWithObstacles",
@@ -987,7 +990,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "[[0,0,0],[0,1,0],[0,0,0]]\n[[0,1],[0,0]]"
+    "exampleTestcases": "[[0,0,0],[0,1,0],[0,0,0]]\n[[0,1],[0,0]]",
+    "exampleResult": "2\n1"
   },
   "64": {
     "name": "minPathSum",
@@ -4235,7 +4239,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "[10,9,2,5,3,7,101,18]\n[0,1,0,3,2,3]\n[7,7,7,7,7,7,7]"
+    "exampleTestcases": "[10,9,2,5,3,7,101,18]\n[0,1,0,3,2,3]\n[7,7,7,7,7,7,7]",
+    "exampleResult": "4\n4\n1"
   },
   "301": {
     "name": "removeInvalidParentheses",
