@@ -69,6 +69,9 @@ class Metadata:
         elif type == 'integer[]':
             if s == '[]': return []
             return [int(e) for e in s[1:-1].split(',')]
+        elif type == 'integer[][]':
+            if s == '[]': return []
+            return [self.__parse('integer[]', '[' + e + ']') for e in s[2:-2].split('],[')]
         elif type == 'double':
             return float(str)
         elif type == 'string':
@@ -111,6 +114,8 @@ class Metadata:
             return str(v)
         elif type == 'integer[]':
             return '[' + ','.join([str(e) for e in v]) + ']'
+        elif type == 'integer[][]':
+            return '[' + ','.join([self.__stringify('integer[]', e) for e in v]) + ']'
         elif type == 'double':
             return str(v)
         elif type == 'string':
