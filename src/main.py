@@ -72,6 +72,9 @@ class Metadata:
         elif type == 'integer[][]':
             if s == '[]': return []
             return [self.__parse('integer[]', '[' + e + ']') for e in s[2:-2].split('],[')]
+        elif type == 'string[][]' or type == 'character[][]':
+            if s == '[]': return []
+            return [self.__parse('string[]', '[' + e + ']') for e in s[2:-2].split('],[')]
         elif type == 'double':
             return float(str)
         elif type == 'string':
@@ -119,12 +122,14 @@ class Metadata:
             return '[' + ','.join([str(e) for e in v]) + ']'
         elif type == 'integer[][]':
             return '[' + ','.join([self.__stringify('integer[]', e) for e in v]) + ']'
+        elif type == 'string[][]' or type == 'character[][]':
+            return '[' + ','.join([self.__stringify('string[]', e) for e in v]) + ']'
         elif type == 'double':
             return str(v)
         elif type == 'string':
             return '"' + v + '"'
         elif type == 'string[]':
-            return '[' + ['"' + e + '"' for e in v].join(',') + ']'
+            return '[' + ','.join(['"' + e + '"' for e in v]) + ']'
         elif type == 'boolean':
             return 'true' if v else 'false'
         elif re.match(r'list<(.+)>', type):
