@@ -658,7 +658,8 @@
     "return": {
       "type": "integer"
     },
-    "exampleTestcases": "[1,2,0]\n[3,4,-1,1]\n[7,8,9,11,12]"
+    "exampleTestcases": "[1,2,0]\n[3,4,-1,1]\n[7,8,9,11,12]\n[]\n[0]\n[0,2,2,1,1]\n[-5]\n[2,2]",
+    "exampleResult": "3\n2\n1\n1\n1\n3\n1\n1"
   },
   "42": {
     "name": "trap",
