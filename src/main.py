@@ -90,6 +90,9 @@ class Metadata:
                 p.next = ListNode(int(v))
                 p = p.next
             return dummy.next
+        elif type == 'ListNode[]':
+            if s == '[]': return []
+            return [self.__parse('ListNode', '[' + e + ']') for e in s[2:-2].split('],[')]
         elif type == 'TreeNode':
             if s == '[]': return None
             nodes = [TreeNode(int(e)) if e != 'null' else None for e in s[1:-1].split(',')]
@@ -134,6 +137,8 @@ class Metadata:
                 res.append(str(p.val))
                 p = p.next
             return '[' + ','.join(res) + ']'
+        elif type == 'ListNode[]':
+            return '[' + ','.join([self.__stringify('ListNode', e) for e in v]) + ']'
         elif type == 'TreeNode':
             res = []
             queue = []
